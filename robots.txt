@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://us-us-severance-pay-calc.enjoy-onepage.com/sitemap.xml
+
+Sitemap: https://us-severance-pay-calc.enjoy-onepage.com/sitemap.xml

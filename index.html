@@ -603,14 +603,14 @@
   });
 
   function calculate() {
-    const salary = Math.max(0, parseFloat(annualSalaryEl.value) || 0);
-    const years = Math.max(0, parseFloat(yearsWorkedEl.value) || 0);
-    const weeksPerYr = Math.max(0, parseFloat(weeksPerYearEl.value) || 0);
-    const floorWeeks = Math.max(0, parseFloat(minimumFloorEl.value) || 0);
-    const ptoHours = Math.max(0, parseFloat(unusedPtoHoursEl.value) || 0);
-    const bonus = Math.max(0, parseFloat(proratedBonusEl.value) || 0);
-    const cobraMo = Math.max(0, parseFloat(cobraMonthsEl.value) || 0);
-    const cobraMoCost = Math.max(0, parseFloat(cobraCostMonthlyEl.value) || 0);
+    const salary = Math.max(0, Math.max(0, parseFloat(annualSalaryEl.value) || 0));
+    const years = Math.max(0, Math.max(0, parseFloat(yearsWorkedEl.value) || 0));
+    const weeksPerYr = Math.max(0, Math.max(0, parseFloat(weeksPerYearEl.value) || 0));
+    const floorWeeks = Math.max(0, Math.max(0, parseFloat(minimumFloorEl.value) || 0));
+    const ptoHours = Math.max(0, Math.max(0, parseFloat(unusedPtoHoursEl.value) || 0));
+    const bonus = Math.max(0, Math.max(0, parseFloat(proratedBonusEl.value) || 0));
+    const cobraMo = Math.max(0, Math.max(0, parseFloat(cobraMonthsEl.value) || 0));
+    const cobraMoCost = Math.max(0, Math.max(0, parseFloat(cobraCostMonthlyEl.value) || 0));
 
     const weeklyWage = salary / 52;
     const hourlyWage = salary / 2080;
